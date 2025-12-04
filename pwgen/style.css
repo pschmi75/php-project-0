@@ -1,0 +1,50 @@
+** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202020;
+  color: antiquewhite;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 30px;
+
+  .title-container {
+    text-align: center;
+  }
+
+  .password-container {
+    padding: 16px;
+    width: 256px;
+    border-radius: 1rem;
+    background-color: #404040;
+    margin-bottom: 20px;
+  }
+}
+
+form {
+  p {
+    text-align: center;
+  }
+
+  input {
+    padding: 16px;
+    background-color: #404040;
+    color: antiquewhite;
+    border: none;
+  }
+
+  .number-input {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .submit-input {
+    border-radius: 0 1rem 1rem 0;
+  }
+}
