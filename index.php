@@ -8,9 +8,16 @@
 <body>
   
   <?php
-    echo "Huhu";
-    require("./variables.php");
-    echo $var;
+    // echo "Huhu";
+    // echo $var;
+
+    // require("./variables.php");
+    // $p1 = new Person(18);
+    // echo $p1->getAge();
+
+    require("./string-methods.php");
+
+    var_dump(trimWhitespace(" Hallo ", Side::left));
   ?>
 </body>
 </html>
