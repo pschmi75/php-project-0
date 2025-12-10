@@ -1,18 +1,10 @@
 <?php
   if ($_POST["length"] !== NULL) {
-  $pwlen = (int) $_POST["length"];
-  $rand = new \Random\Randomizer();
-  $srcstr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!&/()=?#+*";
-  
-  switch (true) {
-    case $pwlen < 1:
-      $pw = "Length must be greater than 0"
-      break;
-    default:
-      $pw = $rand->getBytesFromString($srcstr, $pwlen);      
-      break;
-  }
-
+    $pwlen = (int) $_POST["length"];
+    $rand = new Random\Randomizer();
+    $srcstr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!&/()=?#+*";
+    if ($pwlen < 1) $pw = "Length must be greater than 0";
+    else $pw = ""; //$rand->getBytesFromString($srcstr, $pwlen)
   }
 ?>
 
